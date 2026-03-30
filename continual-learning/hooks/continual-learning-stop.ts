@@ -4,9 +4,9 @@ import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "no
 import { dirname, resolve } from "node:path";
 import { stdin } from "bun";
 
-const STATE_PATH = resolve(".cursor/hooks/state/continual-learning.json");
+const STATE_PATH = resolve(".vybe/hooks/state/continual-learning.json");
 const INCREMENTAL_INDEX_PATH = resolve(
-  ".cursor/hooks/state/continual-learning-index.json"
+  ".vybe/hooks/state/continual-learning-index.json"
 );
 const DEFAULT_MIN_TURNS = 10;
 const DEFAULT_MIN_MINUTES = 120;

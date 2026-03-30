@@ -32,10 +32,10 @@ function fail(message) {
 }
 
 // 1. Validate marketplace.json
-const marketplacePath = resolve(root, ".cursor-plugin/marketplace.json");
+const marketplacePath = resolve(root, ".vybe-plugin/marketplace.json");
 
 if (!existsSync(marketplacePath)) {
-  fail(".cursor-plugin/marketplace.json not found");
+  fail(".vybe-plugin/marketplace.json not found");
   process.exit(1);
 }
 
@@ -51,7 +51,7 @@ if (!validateMarketplace(marketplace)) {
 // 2. Validate each plugin
 for (const entry of marketplace.plugins ?? []) {
   const pluginDir = resolve(root, entry.source);
-  const pluginJsonPath = resolve(pluginDir, ".cursor-plugin/plugin.json");
+  const pluginJsonPath = resolve(pluginDir, ".vybe-plugin/plugin.json");
 
   // Check source directory exists
   if (!existsSync(pluginDir)) {
@@ -64,7 +64,7 @@ for (const entry of marketplace.plugins ?? []) {
   // Check plugin.json exists
   if (!existsSync(pluginJsonPath)) {
     fail(
-      `Plugin "${entry.name}": missing .cursor-plugin/plugin.json in "${entry.source}"`
+      `Plugin "${entry.name}": missing .vybe-plugin/plugin.json in "${entry.source}"`
     );
     continue;
   }
@@ -73,7 +73,7 @@ for (const entry of marketplace.plugins ?? []) {
 
   if (!validatePlugin(pluginJson)) {
     fail(
-      `Plugin "${entry.name}": plugin.json schema validation failed (${entry.source}/.cursor-plugin/plugin.json):`
+      `Plugin "${entry.name}": plugin.json schema validation failed (${entry.source}/.vybe-plugin/plugin.json):`
     );
     for (const err of validatePlugin.errors) {
       const detail =

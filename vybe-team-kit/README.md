@@ -1,11 +1,11 @@
-# Cursor Team Kit plugin
+# Vybe Team Kit plugin
 
-Internal-style workflows for CI, code review, shipping, and test reliability.
+Team workflows for CI, code review, shipping, and test reliability.
 
 ## Installation
 
 ```bash
-/add-plugin cursor-team-kit
+/add-plugin vybe-team-kit
 ```
 
 ## Components

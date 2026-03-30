@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://cursor.com/schemas/cursor-plugin/marketplace.json",
-  "title": "Cursor Plugin Marketplace",
-  "description": "Schema for .cursor-plugin/marketplace.json — defines a marketplace that indexes one or more Cursor plugins.",
+  "$id": "https://vybe.dev/schemas/vybe-plugin/marketplace.json",
+  "title": "Vybe Plugin Marketplace",
+  "description": "Schema for .vybe-plugin/marketplace.json — defines a marketplace that indexes one or more Vybe plugins.",
   "type": "object",
   "required": ["name", "plugins"],
   "additionalProperties": false,

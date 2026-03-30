@@ -1,0 +1,29 @@
+{
+  "name": "vybe-team-kit",
+  "displayName": "Vybe Team Kit",
+  "version": "1.0.0",
+  "description": "Team workflows for CI, code review, and shipping. Covers the full dev loop: CI monitoring and fixing, PR creation, merge conflicts, smoke tests, compiler checks, code cleanup, and work summaries.",
+  "author": {
+    "name": "Vybe"
+  },
+  "homepage": "https://github.com/vybe/vybe-plugins/tree/main/vybe-team-kit",
+  "repository": "https://github.com/vybe/vybe-plugins",
+  "license": "MIT",
+  "logo": "assets/avatar.png",
+  "keywords": [
+    "vybe-team-kit",
+    "ci",
+    "code-review",
+    "shipping",
+    "testing"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "internal-workflows",
+    "quality",
+    "delivery"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "rules": "./rules/"
+}

@@ -4,11 +4,10 @@
   "version": "1.0.0",
   "description": "Incrementally learns durable user preferences and workspace facts from transcript changes and keeps AGENTS.md up to date with plain bullet points.",
   "author": {
-    "name": "Cursor",
-    "email": "plugins@cursor.com"
+    "name": "Vybe"
   },
-  "homepage": "https://github.com/cursor/plugins",
-  "repository": "https://github.com/cursor/plugins",
+  "homepage": "https://github.com/vybe/vybe-plugins/tree/main/continual-learning",
+  "repository": "https://github.com/vybe/vybe-plugins",
   "license": "MIT",
   "logo": "assets/avatar.png",
   "keywords": [

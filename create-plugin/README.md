@@ -1,6 +1,6 @@
 # Create plugin
 
-Meta workflows for creating Cursor plugins that are marketplace-ready.
+Meta workflows for creating Vybe plugins that are marketplace-ready.
 
 ## Installation
 

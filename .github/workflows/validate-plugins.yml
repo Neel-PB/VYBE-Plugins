@@ -3,7 +3,7 @@ name: Validate plugins
 on:
   pull_request:
     paths:
-      - ".cursor-plugin/marketplace.json"
+      - ".vybe-plugin/marketplace.json"
       - "**/plugin.json"
       - "schemas/**"
 

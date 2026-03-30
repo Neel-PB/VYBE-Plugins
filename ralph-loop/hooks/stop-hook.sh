@@ -4,7 +4,7 @@
 # When the agent finishes a turn, this hook decides whether to feed the
 # same prompt back for another iteration or let the session end.
 #
-# Cursor stop hook API:
+# Vybe stop hook API:
 #   Input:  { "status": "completed"|"aborted"|"error", "loop_count": N, ...common }
 #   Output: { "followup_message": "<text>" }  to continue, or exit 0 with no output to stop
 
@@ -12,9 +12,9 @@ set -euo pipefail
 
 HOOK_INPUT=$(cat)
 
-PROJECT_DIR="${CURSOR_PROJECT_DIR:-.}"
-STATE_FILE="$PROJECT_DIR/.cursor/ralph/scratchpad.md"
-DONE_FLAG="$PROJECT_DIR/.cursor/ralph/done"
+PROJECT_DIR="${VYBE_PROJECT_DIR:-.}"
+STATE_FILE="$PROJECT_DIR/.vybe/ralph/scratchpad.md"
+DONE_FLAG="$PROJECT_DIR/.vybe/ralph/done"
 
 # No active loop. Let the session end.
 if [[ ! -f "$STATE_FILE" ]]; then

@@ -11,9 +11,9 @@ set -euo pipefail
 
 HOOK_INPUT=$(cat)
 
-PROJECT_DIR="${CURSOR_PROJECT_DIR:-.}"
-STATE_FILE="$PROJECT_DIR/.cursor/ralph/scratchpad.md"
-DONE_FLAG="$PROJECT_DIR/.cursor/ralph/done"
+PROJECT_DIR="${VYBE_PROJECT_DIR:-.}"
+STATE_FILE="$PROJECT_DIR/.vybe/ralph/scratchpad.md"
+DONE_FLAG="$PROJECT_DIR/.vybe/ralph/done"
 
 # No active loop, nothing to do
 if [[ ! -f "$STATE_FILE" ]]; then

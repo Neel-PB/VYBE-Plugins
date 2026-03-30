@@ -28,11 +28,11 @@ The skill is marked `disable-model-invocation: true`, so it will not be auto-sel
 
 The hook keeps local runtime state in:
 
-- `.cursor/hooks/state/continual-learning.json` (cadence state)
+- `.vybe/hooks/state/continual-learning.json` (cadence state)
 
 The updater uses an incremental transcript index at:
 
-- `.cursor/hooks/state/continual-learning-index.json`
+- `.vybe/hooks/state/continual-learning-index.json`
 
 ## Trigger cadence
 

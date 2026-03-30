@@ -1,10 +1,10 @@
 # Ralph Loop
 
-Ralph Loop runs Cursor in a self-referential loop, feeding the same prompt back after every turn until the task is complete. It implements the [Ralph Wiggum technique](https://ghuntley.com/ralph/) pioneered by Geoffrey Huntley.
+Ralph Loop runs Vybe in a self-referential loop, feeding the same prompt back after every turn until the task is complete. It implements the [Ralph Wiggum technique](https://ghuntley.com/ralph/) pioneered by Geoffrey Huntley.
 
 ## How it works
 
-Two hooks drive the loop. An `afterAgentResponse` hook watches each response for a `<promise>` tag matching the completion phrase. A `stop` hook fires when Cursor finishes a turn. If the promise hasn't been detected and the iteration limit hasn't been reached, the stop hook sends the original prompt back as a `followup_message`, starting the next iteration. Cursor sees its own previous edits in the working tree and git history, iterates on them, and repeats. The prompt never changes. The code does.
+Two hooks drive the loop. An `afterAgentResponse` hook watches each response for a `<promise>` tag matching the completion phrase. A `stop` hook fires when Vybe finishes a turn. If the promise hasn't been detected and the iteration limit hasn't been reached, the stop hook sends the original prompt back as a `followup_message`, starting the next iteration. Vybe sees its own previous edits in the working tree and git history, iterates on them, and repeats. The prompt never changes. The code does.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Two hooks drive the loop. An `afterAgentResponse` hook watches each response for
 
 > Start a ralph loop: "Build a REST API for todos. CRUD operations, input validation, tests. Output COMPLETE when done." --completion-promise "COMPLETE" --max-iterations 50
 
-Cursor will implement the API, run tests, see failures, fix them, and repeat until all requirements are met.
+Vybe will implement the API, run tests, see failures, fix them, and repeat until all requirements are met.
 
 ## Skills
 
@@ -33,7 +33,7 @@ Cursor will implement the API, run tests, see failures, fix them, and repeat unt
 
 ## Writing good prompts
 
-Define explicit completion criteria. Vague goals like "make it good" give Cursor nothing to verify against.
+Define explicit completion criteria. Vague goals like "make it good" give Vybe nothing to verify against.
 
 ```markdown
 Build a REST API for todos.

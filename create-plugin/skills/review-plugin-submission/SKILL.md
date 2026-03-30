@@ -1,6 +1,6 @@
 ---
 name: review-plugin-submission
-description: Audit a Cursor plugin for marketplace readiness. Use when validating manifests, component metadata, discovery paths, and submission quality before publishing.
+description: Audit a Vybe plugin for marketplace readiness. Use when validating manifests, component metadata, discovery paths, and submission quality before publishing.
 ---
 
 # Review plugin submission
@@ -12,7 +12,7 @@ A plugin is implemented and needs a final quality check before submission or rel
 ## Workflow
 
 1. Verify manifest validity:
-   - `.cursor-plugin/plugin.json` exists
+   - `.vybe-plugin/plugin.json` exists
    - `name` is valid lowercase kebab-case
    - metadata fields are coherent (`description`, `version`, `author`, `license`)
 2. Verify component discoverability:
@@ -27,7 +27,7 @@ A plugin is implemented and needs a final quality check before submission or rel
    - Rules include valid frontmatter and clear guidance
    - Agents and commands include `name` and `description`
 4. Verify repository integration:
-   - For marketplace repos, plugin entry exists in `.cursor-plugin/marketplace.json`
+   - For marketplace repos, plugin entry exists in `.vybe-plugin/marketplace.json`
    - `source` resolves to plugin directory and names are unique
 5. Verify documentation quality:
    - `README.md` states purpose, installation, and component coverage
