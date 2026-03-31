@@ -10,8 +10,6 @@ Skills, rules, agents, hooks, and MCP wiring for **Vybe Desktop**. Each plugin i
 | `continual-learning` | [Continual Learning](continual-learning/) | Vybe | Developer Tools | Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only. |
 | `vybe-team-kit` | [Vybe Team Kit](vybe-team-kit/) | Vybe | Developer Tools | Team workflows for CI, code review, and shipping. |
 | `create-plugin` | [Create Plugin](create-plugin/) | Vybe | Developer Tools | Scaffold and validate new Vybe plugins. |
-| `ralph-loop` | [Ralph Loop](ralph-loop/) | Vybe | — | Iterative self-referential AI loops (Ralph Wiggum technique). |
-| `agent-compatibility` | [Agent Compatibility](agent-compatibility/) | Vybe | Developer Tools | CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. |
 
 Author values match each plugin’s `plugin.json` `author.name` (Vybe).
 
