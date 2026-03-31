@@ -12,7 +12,6 @@ Skills, rules, agents, hooks, and MCP wiring for **Vybe Desktop**. Each plugin i
 | `create-plugin` | [Create Plugin](create-plugin/) | Vybe | Developer Tools | Scaffold and validate new Vybe plugins. |
 | `ralph-loop` | [Ralph Loop](ralph-loop/) | Vybe | — | Iterative self-referential AI loops (Ralph Wiggum technique). |
 | `agent-compatibility` | [Agent Compatibility](agent-compatibility/) | Vybe | Developer Tools | CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. |
-| `cli-for-agent` | [CLI for Agents](cli-for-agent/) | Vybe | Developer Tools | Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run. |
 
 Author values match each plugin’s `plugin.json` `author.name` (Vybe).
 
